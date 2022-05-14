@@ -35,7 +35,7 @@ int main(){
     #endif
         #ifdef OMP
         double start = omp_get_wtime();
-        #pragma parallel for
+        #pragma omp parallel for
         #endif
         for (; std::getline(infile, tmp);){
             if (isPalindrome(tmp)){

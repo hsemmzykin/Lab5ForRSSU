@@ -9,7 +9,7 @@
 #include <chrono>
 #include <string>
 
- #define TIME_SEQUENTIAL
+// #define TIME_SEQUENTIAL
 // #define OMP
 
 #include "Palindromes.h"

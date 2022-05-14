@@ -10,7 +10,7 @@
 bool isPalindrome(std::string s){
 std::string tmp = s;
 #ifdef OMP
-#pragma parallel for
+#pragma omp parallel for
 #endif
     for (size_t i = 0; i < s.size() / 2; ++i){
         std::swap(s[i], s[s.size() - 1 - i]);
